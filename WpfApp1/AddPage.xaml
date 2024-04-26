@@ -1,0 +1,57 @@
+﻿<Page x:Class="WpfApp1.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddPage">
+
+    <Grid Background="LightSkyBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Background="Gray">
+            <Label FontSize="16" HorizontalAlignment="Center" Content="Создайте заявку на ремонт"></Label>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Margin="0,10,0,10" HorizontalAlignment="Center" Width="306">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Телефон:" Margin="5"/>
+            <TextBox x:Name="Telephone" Grid.Row="0" Grid.Column="1" Margin="5"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Тип продукта:" Margin="5"/>
+            <TextBox x:Name="ProductBox" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Тип неисправности:" Margin="5"/>
+            <TextBox x:Name="typeFault" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Описание проблемы:" Margin="5"/>
+            <TextBox x:Name="DescriptionProblemTextBox" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Имя клиента:" Margin="5"/>
+            <TextBox x:Name="ClientNameTextBox" Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+           
+
+            <Button Background="AliceBlue" x:Name="SaveButton" Click="Save" Grid.Row="6" Grid.ColumnSpan="2" Content="Сохранить" HorizontalAlignment="Right" Margin="5"/>
+        </Grid>
+    </Grid>
+</Page>
