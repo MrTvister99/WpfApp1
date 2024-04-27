@@ -253,7 +253,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid Background="LightSkyBlue" Grid.Column="1">
                     <Image HorizontalAlignment="Left" Source="remonts.png" Width="189" Margin="-28,-38,0,201" RenderTransformOrigin="0.906,0.204"/>
-                    <TextBlock Text="Вход" HorizontalAlignment="Center" FontSize="19" Margin="0,30,0,191" Width="46" Foreground="Black"/>
+                    <TextBlock TextAlignment="Center"  Text="Вход" HorizontalAlignment="Center"  FontSize="27" Margin="0,30,0,251" Width="100" Foreground="White"/>
 
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="270" Height="110">
                         <TextBlock Text="email" Foreground="Black"/>
@@ -263,7 +263,7 @@
                     </StackPanel>
 
                     <Button Style="{DynamicResource ButtonStyle2}" Click="Enter_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Войти" Width="100" Height="30" Margin="0,170,0,0" Grid.Column="1" Background="LightBlue" />
-                   
+                    <Button Style="{DynamicResource ButtonStyle2}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Создать аккаунт" Width="100" Height="30" Margin="0,260,0,0" Grid.Column="1" Background="Gray" Click="Button_Click" />
 
                 </Grid>
 
